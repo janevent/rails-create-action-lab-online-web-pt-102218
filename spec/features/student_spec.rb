@@ -10,7 +10,7 @@ end
 describe 'Multiple students' do
   it 'shows them on the index page' do
     Student.create!(first_name: "Daenerys", last_name: "Targaryen")
-    Student.create!(firsthttps://learn.co/tracks/online-software-engineering-part-time/rails/crud-with-rails/create-action-lab#_name: "Lindsey", last_name: "Stirling")
+    Student.create!(first_name: "Lindsey", last_name: "Stirling")
 
     visit students_path
     expect(page).to have_content(/Daenerys|Lindsey/)
